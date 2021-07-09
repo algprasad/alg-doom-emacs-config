@@ -20,6 +20,7 @@
        ;;layout            ; auie,ctsrnm is the superior home row
 
        :completion
+       (lsp-ui+company-lsp) ;; REVIEW: maybe a source of error
        company           ; the ultimate code completion backend
        ;;helm              ; the *other* search engine for love and life
        ;;ido               ; the other *other* search engine...
@@ -94,7 +95,7 @@
        ;;gist              ; interacting with github gists
        lookup              ; navigate your code and its documentation
        ;;lsp
-       magit             ; a git porcelain for Emacs
+       ;;magit             ; a git porcelain for Emacs
        make              ; run make tasks from Emacs
        ;;pass              ; password manager for nerds
        ;;pdf               ; pdf enhancements
@@ -112,7 +113,7 @@
        :lang
        ;;agda              ; types of types of types of types...
        ;;beancount         ; mind the GAAP
-       cc                ; C > C++ == 1
+       (cc + lsp)                 ; C > C++ == 1
        ;;clojure           ; java with a lisp
        ;;common-lisp       ; if you've seen one lisp, you've seen them all
        ;;coq               ; proofs-as-programs
