@@ -48,6 +48,11 @@
 ;(unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
-(package! cmake-ide
-  :recipe (:host github :repo "atilaneves/cmake-ide"))
+;;(package! cmake-ide
+ ;; :recipe (:host github :repo "atilaneves/cmake-ide"))
 (package! rtags)
+(package! lsp-mode)
+(package! lsp-ui)
+(package! ccls)
+(package! nose)
+(package! company-quickhelp)
